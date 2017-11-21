@@ -1,4 +1,4 @@
-#test zmian na Git
+##test zmian na Git
 require 'csv'                           #biblioteka obsługi plików csv
 require 'pry'
 class Products
