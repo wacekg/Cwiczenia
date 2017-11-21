@@ -1,3 +1,4 @@
+#testowa zmiana treści dla git
 # class Foo
 #   def bar
 #     :bar
