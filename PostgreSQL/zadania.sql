@@ -28,13 +28,13 @@ select manufacturers.id, avg(price) as srednia_cena from products join manufactu
 --zad 13
 select manufacturers.name, avg(price) as srednia_cena from products join manufacturers ON manufacturers.id = products.manufacturer_id group by manufacturers.name;
 --zad 14
---nie wiem
---zad 15 nie ud�ao mi si� po�aczy� min() z nazw� produktu
+select manufacturers.name, avg(price) from products join manufacturers ON products.manufacturer_id = manufacturers.id group by manufacturers.name having avg(products.price) >=150;
+--zad 15
 select name, price from products order by price limit 1;
 --zad 16
-select name from manufacturers
+select manufacturers.name, max(price) from products join manufacturers ON products.manufacturer_id = manufacturers.id group by manufacturers.name;
 --zad 17
-select
+select name from manufacturers where id not in (select manufacturer_id from products);
 --zad 18
 insert into products (name, price, manufacturer_id) values ('Loudspeakers', 70, 2);
 --zad 19
